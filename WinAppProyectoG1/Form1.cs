@@ -22,5 +22,10 @@ namespace WinAppProyectoG1
             FrmIngresarUsuario ObjIniciarSesion = new FrmIngresarUsuario();
             ObjIniciarSesion.ShowDialog();
         }
+
+        private void FrmBienvenida_Load(object sender, EventArgs e)
+        {
+            MessageBox.Show("x");
+        }
     }
 }
