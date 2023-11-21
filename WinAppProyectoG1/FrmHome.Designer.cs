@@ -30,9 +30,9 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.TStrip_Salir = new System.Windows.Forms.ToolStripMenuItem();
             this.videosMusicalesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ingresarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.TStrip_IngresarDatosV = new System.Windows.Forms.ToolStripMenuItem();
             this.modificarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eliminarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -58,38 +58,41 @@
             // archivoToolStripMenuItem
             // 
             this.archivoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.salirToolStripMenuItem});
+            this.TStrip_Salir});
             this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
             this.archivoToolStripMenuItem.Size = new System.Drawing.Size(73, 24);
             this.archivoToolStripMenuItem.Text = "Archivo";
             // 
-            // salirToolStripMenuItem
+            // TStrip_Salir
             // 
-            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.salirToolStripMenuItem.Text = "Salir";
+            this.TStrip_Salir.Name = "TStrip_Salir";
+            this.TStrip_Salir.Size = new System.Drawing.Size(224, 26);
+            this.TStrip_Salir.Text = "Salir";
+            this.TStrip_Salir.Click += new System.EventHandler(this.TStrip_Salir_Click);
             // 
             // videosMusicalesToolStripMenuItem
             // 
             this.videosMusicalesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ingresarToolStripMenuItem,
+            this.TStrip_IngresarDatosV,
             this.modificarToolStripMenuItem,
             this.eliminarToolStripMenuItem});
             this.videosMusicalesToolStripMenuItem.Name = "videosMusicalesToolStripMenuItem";
             this.videosMusicalesToolStripMenuItem.Size = new System.Drawing.Size(136, 24);
             this.videosMusicalesToolStripMenuItem.Text = "Videos Musicales";
             // 
-            // ingresarToolStripMenuItem
+            // TStrip_IngresarDatosV
             // 
-            this.ingresarToolStripMenuItem.Name = "ingresarToolStripMenuItem";
-            this.ingresarToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.ingresarToolStripMenuItem.Text = "Ingresar";
+            this.TStrip_IngresarDatosV.Name = "TStrip_IngresarDatosV";
+            this.TStrip_IngresarDatosV.Size = new System.Drawing.Size(224, 26);
+            this.TStrip_IngresarDatosV.Text = "Ingresar";
+            this.TStrip_IngresarDatosV.Click += new System.EventHandler(this.TStrip_IngresarDatosV_Click);
             // 
             // modificarToolStripMenuItem
             // 
             this.modificarToolStripMenuItem.Name = "modificarToolStripMenuItem";
             this.modificarToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.modificarToolStripMenuItem.Text = "Eliminar";            // 
+            this.modificarToolStripMenuItem.Text = "Eliminar";
+            // 
             // eliminarToolStripMenuItem
             // 
             this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
@@ -113,7 +116,7 @@
             // acercaDeToolStripMenuItem
             // 
             this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
-            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(167, 26);
             this.acercaDeToolStripMenuItem.Text = "Acerca de...";
             // 
             // FrmHome
@@ -136,9 +139,9 @@
 
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem archivoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem TStrip_Salir;
         private System.Windows.Forms.ToolStripMenuItem videosMusicalesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ingresarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem TStrip_IngresarDatosV;
         private System.Windows.Forms.ToolStripMenuItem modificarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eliminarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listarToolStripMenuItem;

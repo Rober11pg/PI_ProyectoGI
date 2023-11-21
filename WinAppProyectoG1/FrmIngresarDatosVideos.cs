@@ -17,9 +17,6 @@ namespace WinAppProyectoG1
             InitializeComponent();
         }
 
-        private void FrmIngresarDatosVideos_Load(object sender, EventArgs e)
-        {
-
-        }
+    
     }
 }

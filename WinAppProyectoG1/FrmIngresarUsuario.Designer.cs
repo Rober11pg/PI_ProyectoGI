@@ -43,16 +43,16 @@
             // 
             // pbxUsuario
             // 
-            this.pbxUsuario.Location = new System.Drawing.Point(265, 84);
+            this.pbxUsuario.Location = new System.Drawing.Point(368, 61);
             this.pbxUsuario.Name = "pbxUsuario";
-            this.pbxUsuario.Size = new System.Drawing.Size(186, 179);
+            this.pbxUsuario.Size = new System.Drawing.Size(134, 122);
             this.pbxUsuario.TabIndex = 0;
             this.pbxUsuario.TabStop = false;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(118, 83);
+            this.label1.Location = new System.Drawing.Point(53, 77);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(80, 20);
             this.label1.TabIndex = 1;
@@ -61,7 +61,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(87, 139);
+            this.label2.Location = new System.Drawing.Point(22, 133);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(111, 20);
             this.label2.TabIndex = 2;
@@ -69,14 +69,14 @@
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(236, 83);
+            this.txtUsuario.Location = new System.Drawing.Point(171, 77);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(159, 27);
             this.txtUsuario.TabIndex = 3;
             // 
             // txtContra
             // 
-            this.txtContra.Location = new System.Drawing.Point(236, 132);
+            this.txtContra.Location = new System.Drawing.Point(171, 126);
             this.txtContra.Name = "txtContra";
             this.txtContra.Size = new System.Drawing.Size(159, 27);
             this.txtContra.TabIndex = 4;
@@ -88,9 +88,9 @@
             this.gpBoxIngreso.Controls.Add(this.txtUsuario);
             this.gpBoxIngreso.Controls.Add(this.label2);
             this.gpBoxIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gpBoxIngreso.Location = new System.Drawing.Point(95, 269);
+            this.gpBoxIngreso.Location = new System.Drawing.Point(240, 199);
             this.gpBoxIngreso.Name = "gpBoxIngreso";
-            this.gpBoxIngreso.Size = new System.Drawing.Size(506, 231);
+            this.gpBoxIngreso.Size = new System.Drawing.Size(385, 231);
             this.gpBoxIngreso.TabIndex = 5;
             this.gpBoxIngreso.TabStop = false;
             this.gpBoxIngreso.Text = "Ingresar Datos";
@@ -99,7 +99,7 @@
             // 
             this.btnIngresar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnIngresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIngresar.Location = new System.Drawing.Point(375, 540);
+            this.btnIngresar.Location = new System.Drawing.Point(453, 460);
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.Size = new System.Drawing.Size(129, 44);
             this.btnIngresar.TabIndex = 6;
@@ -111,7 +111,7 @@
             // 
             this.btnCancelar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(227, 540);
+            this.btnCancelar.Location = new System.Drawing.Point(312, 460);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(126, 44);
             this.btnCancelar.TabIndex = 7;
@@ -123,7 +123,7 @@
             // 
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(273, 32);
+            this.lblTitulo.Location = new System.Drawing.Point(352, 15);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(165, 29);
             this.lblTitulo.TabIndex = 8;
@@ -133,7 +133,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(760, 623);
+            this.ClientSize = new System.Drawing.Size(859, 516);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnIngresar);
