@@ -107,7 +107,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "FrmIngresarDatosVideos";
-            this.Text = "FrmIngresarDatosVideos";
+            this.Text = "Datos Videos";
+            this.Load += new System.EventHandler(this.FrmIngresarDatosVideos_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
