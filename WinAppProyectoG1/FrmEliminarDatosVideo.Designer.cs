@@ -30,14 +30,10 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.NomU = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ApeU = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GUsuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NomC = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ApeC = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GCantante = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.POC = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TCancion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.POC = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GCancion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Productora = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Direc_Video = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,7 +47,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(769, 13);
+            this.label1.Location = new System.Drawing.Point(745, 96);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(55, 16);
             this.label1.TabIndex = 0;
@@ -61,14 +57,10 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.NomU,
-            this.ApeU,
-            this.GUsuario,
             this.NomC,
-            this.ApeC,
             this.GCantante,
-            this.POC,
             this.TCancion,
+            this.POC,
             this.GCancion,
             this.Productora,
             this.Direc_Video,
@@ -83,40 +75,12 @@
             this.dataGridView1.Size = new System.Drawing.Size(1428, 499);
             this.dataGridView1.TabIndex = 1;
             // 
-            // NomU
-            // 
-            this.NomU.HeaderText = "Nombre Usuario";
-            this.NomU.MinimumWidth = 6;
-            this.NomU.Name = "NomU";
-            this.NomU.Width = 125;
-            // 
-            // ApeU
-            // 
-            this.ApeU.HeaderText = "Apellido Usuario";
-            this.ApeU.MinimumWidth = 6;
-            this.ApeU.Name = "ApeU";
-            this.ApeU.Width = 125;
-            // 
-            // GUsuario
-            // 
-            this.GUsuario.HeaderText = "Género Usuario";
-            this.GUsuario.MinimumWidth = 6;
-            this.GUsuario.Name = "GUsuario";
-            this.GUsuario.Width = 125;
-            // 
             // NomC
             // 
             this.NomC.HeaderText = "Nombre Cantante";
             this.NomC.MinimumWidth = 6;
             this.NomC.Name = "NomC";
             this.NomC.Width = 125;
-            // 
-            // ApeC
-            // 
-            this.ApeC.HeaderText = "Apellido Cantante";
-            this.ApeC.MinimumWidth = 6;
-            this.ApeC.Name = "ApeC";
-            this.ApeC.Width = 125;
             // 
             // GCantante
             // 
@@ -125,19 +89,19 @@
             this.GCantante.Name = "GCantante";
             this.GCantante.Width = 125;
             // 
-            // POC
-            // 
-            this.POC.HeaderText = "País de Origen Cantante";
-            this.POC.MinimumWidth = 6;
-            this.POC.Name = "POC";
-            this.POC.Width = 125;
-            // 
             // TCancion
             // 
             this.TCancion.HeaderText = "Título de la Canción";
             this.TCancion.MinimumWidth = 6;
             this.TCancion.Name = "TCancion";
             this.TCancion.Width = 125;
+            // 
+            // POC
+            // 
+            this.POC.HeaderText = "País de Origen Cantante";
+            this.POC.MinimumWidth = 6;
+            this.POC.Name = "POC";
+            this.POC.Width = 125;
             // 
             // GCancion
             // 
@@ -208,14 +172,10 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NomU;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ApeU;
-        private System.Windows.Forms.DataGridViewTextBoxColumn GUsuario;
         private System.Windows.Forms.DataGridViewTextBoxColumn NomC;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ApeC;
         private System.Windows.Forms.DataGridViewTextBoxColumn GCantante;
-        private System.Windows.Forms.DataGridViewTextBoxColumn POC;
         private System.Windows.Forms.DataGridViewTextBoxColumn TCancion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn POC;
         private System.Windows.Forms.DataGridViewTextBoxColumn GCancion;
         private System.Windows.Forms.DataGridViewTextBoxColumn Productora;
         private System.Windows.Forms.DataGridViewTextBoxColumn Direc_Video;
