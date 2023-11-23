@@ -43,7 +43,7 @@
             // 
             // pbxUsuario
             // 
-            this.pbxUsuario.Location = new System.Drawing.Point(368, 61);
+            this.pbxUsuario.Location = new System.Drawing.Point(791, 132);
             this.pbxUsuario.Name = "pbxUsuario";
             this.pbxUsuario.Size = new System.Drawing.Size(134, 122);
             this.pbxUsuario.TabIndex = 0;
@@ -52,33 +52,37 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(53, 77);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 20);
+            this.label1.Size = new System.Drawing.Size(110, 29);
             this.label1.TabIndex = 1;
             this.label1.Text = "Usuario:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(22, 133);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 20);
+            this.label2.Size = new System.Drawing.Size(153, 29);
             this.label2.TabIndex = 2;
             this.label2.Text = "Contraseña:";
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(171, 77);
+            this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsuario.Location = new System.Drawing.Point(213, 81);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(159, 27);
+            this.txtUsuario.Size = new System.Drawing.Size(159, 34);
             this.txtUsuario.TabIndex = 3;
             // 
             // txtContra
             // 
-            this.txtContra.Location = new System.Drawing.Point(171, 126);
+            this.txtContra.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtContra.Location = new System.Drawing.Point(213, 130);
             this.txtContra.Name = "txtContra";
-            this.txtContra.Size = new System.Drawing.Size(159, 27);
+            this.txtContra.Size = new System.Drawing.Size(159, 34);
             this.txtContra.TabIndex = 4;
             // 
             // gpBoxIngreso
@@ -87,10 +91,10 @@
             this.gpBoxIngreso.Controls.Add(this.label1);
             this.gpBoxIngreso.Controls.Add(this.txtUsuario);
             this.gpBoxIngreso.Controls.Add(this.label2);
-            this.gpBoxIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gpBoxIngreso.Location = new System.Drawing.Point(240, 199);
+            this.gpBoxIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gpBoxIngreso.Location = new System.Drawing.Point(636, 334);
             this.gpBoxIngreso.Name = "gpBoxIngreso";
-            this.gpBoxIngreso.Size = new System.Drawing.Size(385, 231);
+            this.gpBoxIngreso.Size = new System.Drawing.Size(459, 231);
             this.gpBoxIngreso.TabIndex = 5;
             this.gpBoxIngreso.TabStop = false;
             this.gpBoxIngreso.Text = "Ingresar Datos";
@@ -98,10 +102,10 @@
             // btnIngresar
             // 
             this.btnIngresar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnIngresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIngresar.Location = new System.Drawing.Point(453, 460);
+            this.btnIngresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIngresar.Location = new System.Drawing.Point(874, 637);
             this.btnIngresar.Name = "btnIngresar";
-            this.btnIngresar.Size = new System.Drawing.Size(129, 44);
+            this.btnIngresar.Size = new System.Drawing.Size(191, 63);
             this.btnIngresar.TabIndex = 6;
             this.btnIngresar.Text = "Ingresar";
             this.btnIngresar.UseVisualStyleBackColor = false;
@@ -110,10 +114,10 @@
             // btnCancelar
             // 
             this.btnCancelar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(312, 460);
+            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.Location = new System.Drawing.Point(659, 637);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(126, 44);
+            this.btnCancelar.Size = new System.Drawing.Size(167, 63);
             this.btnCancelar.TabIndex = 7;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
@@ -122,10 +126,10 @@
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(352, 15);
+            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.Location = new System.Drawing.Point(748, 56);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(165, 29);
+            this.lblTitulo.Size = new System.Drawing.Size(191, 32);
             this.lblTitulo.TabIndex = 8;
             this.lblTitulo.Text = "Inciar Sesión";
             // 
@@ -133,13 +137,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(859, 516);
+            this.ClientSize = new System.Drawing.Size(1785, 765);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnIngresar);
             this.Controls.Add(this.gpBoxIngreso);
             this.Controls.Add(this.pbxUsuario);
             this.Name = "FrmIngresarUsuario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Iniciar Sesión";
             ((System.ComponentModel.ISupportInitialize)(this.pbxUsuario)).EndInit();
             this.gpBoxIngreso.ResumeLayout(false);

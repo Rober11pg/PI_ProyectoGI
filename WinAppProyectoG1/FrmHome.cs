@@ -28,5 +28,11 @@ namespace WinAppProyectoG1
             FrmIngresarDatosVideos ObjDatosVideos = new FrmIngresarDatosVideos();
             ObjDatosVideos.ShowDialog();
         }
+
+        private void TStrip_Eliminar_Click(object sender, EventArgs e)
+        {
+            FrmEliminarDatosVideo ObjEliminarDatosVideo = new FrmEliminarDatosVideo();
+            ObjEliminarDatosVideo.ShowDialog();
+        }
     }
 }

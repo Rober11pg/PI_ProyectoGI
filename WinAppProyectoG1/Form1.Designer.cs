@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmBienvenida));
             this.btnBienvenido = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -36,11 +37,11 @@
             // btnBienvenido
             // 
             this.btnBienvenido.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.btnBienvenido.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBienvenido.Location = new System.Drawing.Point(329, 368);
+            this.btnBienvenido.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBienvenido.Location = new System.Drawing.Point(601, 695);
             this.btnBienvenido.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBienvenido.Name = "btnBienvenido";
-            this.btnBienvenido.Size = new System.Drawing.Size(143, 49);
+            this.btnBienvenido.Size = new System.Drawing.Size(238, 49);
             this.btnBienvenido.TabIndex = 0;
             this.btnBienvenido.Text = "Bienvenido";
             this.btnBienvenido.UseVisualStyleBackColor = false;
@@ -48,10 +49,12 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(87, 59);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(189, 49);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(633, 288);
+            this.pictureBox1.Size = new System.Drawing.Size(1104, 599);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
@@ -59,11 +62,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(859, 516);
+            this.ClientSize = new System.Drawing.Size(1785, 765);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnBienvenido);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FrmBienvenida";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bienvenido";
             this.Load += new System.EventHandler(this.FrmBienvenida_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

@@ -25,7 +25,7 @@ namespace WinAppProyectoG1
 
         private void FrmBienvenida_Load(object sender, EventArgs e)
         {
-            MessageBox.Show("x");
+           
         }
     }
 }
