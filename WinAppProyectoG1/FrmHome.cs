@@ -13,6 +13,7 @@ namespace WinAppProyectoG1
 {
     public partial class FrmHome : Form
     {
+       
         public FrmHome()
         {
             InitializeComponent();
@@ -26,7 +27,8 @@ namespace WinAppProyectoG1
         private void TStrip_IngresarDatosV_Click(object sender, EventArgs e)
         {
             FrmIngresarDatosVideos ObjDatosVideos = new FrmIngresarDatosVideos();
-            ObjDatosVideos.ShowDialog();
+           ObjDatosVideos.ShowDialog();
+            
         }
 
         private void TStrip_Eliminar_Click(object sender, EventArgs e)
