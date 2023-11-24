@@ -94,7 +94,7 @@ namespace WinAppProyectoG1
         private void dateTimeDuracion_ValueChanged(object sender, EventArgs e)
         {
             
-            duracion = dateTimeDuracion.Value.ToString("HH:mm:ss");
+            duracion = dateTimeDuracion.Value.ToString("HH:mm:ss"); 
         }
 
         private void dateTimeFechaPublicacion_ValueChanged(object sender, EventArgs e)
