@@ -14,42 +14,40 @@ namespace WinAppProyectoG1
 {
     public partial class FrmRegistrar : Form
     {
+        private int var;
+        private Random random = new Random();
+        private string[] nombre = new string[100];
+        private string[] apellido = new string[100];
+        private string[] usuario = new string[100];
+        private string[] contra = new string[100];
+        private char[] gene = new char[100];
+        private int i = 0;
+        private string nom, ape, usu, co, con;
+        private int posicion;
         public FrmRegistrar()
         {
             InitializeComponent();
-            /*Assembly.LoadFile("WinAppProyectoG1.Resources.dll");
             var = random.Next(1, 5);
             switch (var)
             {
                 case 1:
-                    pbxImageRobot.Image = Resources.;
+                    pbxImageRobot.Image = Resources._1;
                     break;
                 case 2:
-                    pbxImageRobot.Image = Resources.2;
+                    pbxImageRobot.Image = Resources._2;
                     break;
                 case 3:
-                    pbxImageRobot.Image = Resources.3;
+                    pbxImageRobot.Image = Resources._3;
                     break;
                 case 4:
-                    pbxImageRobot.Image = Resources.4;
+                    pbxImageRobot.Image = Resources._4;
                     break;
                 case 5:
-                    pbxImageRobot.Image = Resources.5;
+                    pbxImageRobot.Image = Resources._5;
                     break;
-            }*/
+            }
         }
-        int var;
-        Random random = new Random();
-        string[] nombre = new string[100];
-        string[] apellido = new string[100];
-        string[] usuario = new string[100];
-        string[] contra = new string[100];
-        char[] gene = new char[100];
-        string[] rol = new string[100];
-        int[] edad = new int[100];
-        int i = 0;
-        string nom, ape, usu, co, con;
-        int posicion;
+
         private void txtUsuario_KeyPress(object sender, KeyPressEventArgs e)
         {
                 if(e.KeyChar == (char)Keys.Enter)
@@ -67,7 +65,7 @@ namespace WinAppProyectoG1
         {
             if (e.KeyChar == (char)Keys.Enter)
             {
-                if (con == txtConFContra.Text)
+                if (co == txtConFContra.Text)
                 {
                     grpGenero.Enabled = true;
                     rdbtnH.Enabled = true;
@@ -136,7 +134,83 @@ namespace WinAppProyectoG1
 
         private void btnContinuarRot_Click(object sender, EventArgs e)
         {
-           /* var = random.Next(1, 5);
+            switch (var)
+            {
+                case 1:
+                    if (txtIngreCaracteresRoot.Text == "qGphJD")
+                    {
+                        lbl_resp.Text = "Correcto";
+                    }
+                    else
+                    {
+                        lbl_resp.Text = "Incorrecto";
+                    }
+                    break;
+                case 2:
+                    if (txtIngreCaracteresRoot.Text == "W6 8HP")
+                    {
+                        lbl_resp.Text = "Correcto";
+                    }
+                    else
+                    {
+                        lbl_resp.Text = "Incorrecto";
+                    }
+                    break;
+                case 3:
+                    if (txtIngreCaracteresRoot.Text == "PNRHXR")
+                    {
+                        lbl_resp.Text = "Correcto";
+                    }
+                    else
+                    {
+                        lbl_resp.Text = "Incorrecto";
+                    }
+                    break;
+                case 4:
+                    if (txtIngreCaracteresRoot.Text == "upord")
+                    {
+                        lbl_resp.Text = "Correcto";
+                    }
+                    else
+                    {
+                        lbl_resp.Text = "Incorrecto";
+                    }
+                    break;
+                case 5:
+                    if (txtIngreCaracteresRoot.Text == "aumso")
+                    {
+                        lbl_resp.Text = "Correcto";
+                    }
+                    else
+                    {
+                        lbl_resp.Text = "Incorrecto";
+                    }
+                    break;
+            }
+            
+            if (lbl_resp.Text == "Correcto")
+            {
+                panelRoot.Visible = false;
+                pbxImageRobot.Visible = false;
+                txtIngreCaracteresRoot.Visible = false;
+                gpBoxCaracteresroot.Visible = false;
+                btnContinuarRot.Visible = false;
+                btnCambiarImage.Visible = false;
+                btnContinuar.Enabled = true;
+                checkBoxRobot.Enabled = false;
+            }
+            else
+            {
+                MessageBox.Show("Ingrese de nuevo el Catpcham porfavor");
+                txtIngreCaracteresRoot.Clear();
+                txtIngreCaracteresRoot.Focus();
+            }
+                
+        }
+
+        private void btnCambiarImage_Click(object sender, EventArgs e)
+        {
+            var = random.Next(1, 5);
             switch (var)
             {
                 case 1:
@@ -154,8 +228,13 @@ namespace WinAppProyectoG1
                 case 5:
                     pbxImageRobot.Image = Resources._5;
                     break;
-            }*/
+            }
             btnContinuar.Focus();
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
 
         private void txtContra_KeyPress(object sender, KeyPressEventArgs e)
@@ -164,7 +243,7 @@ namespace WinAppProyectoG1
             {
                 if (txtContra.Text.Length > 7)
                 {
-                    con = txtContra.Text;
+                    co = txtContra.Text;
                     txtConFContra.Enabled = true;
                     txtConFContra.Focus();
                     
@@ -234,15 +313,19 @@ namespace WinAppProyectoG1
             apellido[i] = ape;
             usuario[i] = usu;
             contra[i] = co;
-            if(rdbtnH.Checked)
+            if (rdbtnH.Checked)
             {
                 gene[i] = 'H';
             }
-            if(rdbtnM.Checked)
+            if (rdbtnM.Checked)
             {
                 gene[i] = 'M';
             }
             i++;
+
+            FrmIngresarUsuario ObjUsuario = new FrmIngresarUsuario(nombre, apellido, usuario, contra, gene, i);
+            ObjUsuario.Show();
         }
+
     }
 }

@@ -38,6 +38,7 @@
             this.listarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lblNomApe = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,7 +68,7 @@
             // TStrip_Salir
             // 
             this.TStrip_Salir.Name = "TStrip_Salir";
-            this.TStrip_Salir.Size = new System.Drawing.Size(224, 36);
+            this.TStrip_Salir.Size = new System.Drawing.Size(146, 36);
             this.TStrip_Salir.Text = "Salir";
             this.TStrip_Salir.Click += new System.EventHandler(this.TStrip_Salir_Click);
             // 
@@ -84,21 +85,21 @@
             // TStrip_IngresarDatosV
             // 
             this.TStrip_IngresarDatosV.Name = "TStrip_IngresarDatosV";
-            this.TStrip_IngresarDatosV.Size = new System.Drawing.Size(224, 36);
+            this.TStrip_IngresarDatosV.Size = new System.Drawing.Size(214, 36);
             this.TStrip_IngresarDatosV.Text = "Ingresar";
             this.TStrip_IngresarDatosV.Click += new System.EventHandler(this.TStrip_IngresarDatosV_Click);
             // 
             // TStrip_Eliminar
             // 
             this.TStrip_Eliminar.Name = "TStrip_Eliminar";
-            this.TStrip_Eliminar.Size = new System.Drawing.Size(224, 36);
+            this.TStrip_Eliminar.Size = new System.Drawing.Size(214, 36);
             this.TStrip_Eliminar.Text = "Eliminar";
             this.TStrip_Eliminar.Click += new System.EventHandler(this.TStrip_Eliminar_Click);
             // 
             // eliminarToolStripMenuItem
             // 
             this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
-            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(224, 36);
+            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(214, 36);
             this.eliminarToolStripMenuItem.Text = "Reproducir";
             // 
             // listarToolStripMenuItem
@@ -121,16 +122,27 @@
             this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(218, 36);
             this.acercaDeToolStripMenuItem.Text = "Acerca de...";
             // 
+            // lblNomApe
+            // 
+            this.lblNomApe.AutoSize = true;
+            this.lblNomApe.Location = new System.Drawing.Point(1133, 68);
+            this.lblNomApe.Name = "lblNomApe";
+            this.lblNomApe.Size = new System.Drawing.Size(11, 16);
+            this.lblNomApe.TabIndex = 1;
+            this.lblNomApe.Text = "-";
+            // 
             // FrmHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1785, 765);
+            this.Controls.Add(this.lblNomApe);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FrmHome";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmHome";
+            this.Load += new System.EventHandler(this.FrmHome_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -150,5 +162,6 @@
         private System.Windows.Forms.ToolStripMenuItem listarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem acercaDeToolStripMenuItem;
+        private System.Windows.Forms.Label lblNomApe;
     }
 }

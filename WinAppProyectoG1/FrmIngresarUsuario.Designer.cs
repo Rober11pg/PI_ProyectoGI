@@ -134,6 +134,7 @@
             this.txtContrasenia.Name = "txtContrasenia";
             this.txtContrasenia.Size = new System.Drawing.Size(432, 27);
             this.txtContrasenia.TabIndex = 0;
+            this.txtContrasenia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtContrasenia_KeyPress);
             // 
             // grpBoxUsuario
             // 
@@ -156,6 +157,7 @@
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(430, 27);
             this.txtUsuario.TabIndex = 0;
+            this.txtUsuario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUsuario_KeyPress);
             // 
             // FrmIngresarUsuario
             // 
@@ -168,6 +170,7 @@
             this.Name = "FrmIngresarUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Iniciar Sesión";
+            this.Load += new System.EventHandler(this.FrmIngresarUsuario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbxUsuario)).EndInit();
             this.grpBoxFondo.ResumeLayout(false);
             this.grpBoxFondo.PerformLayout();

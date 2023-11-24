@@ -13,10 +13,16 @@ namespace WinAppProyectoG1
 {
     public partial class FrmHome : Form
     {
-       
-        public FrmHome()
+        private string nombre;
+        private string apellido;
+        public FrmHome(string nombre, string apellido)
         {
             InitializeComponent();
+            this.nombre = nombre;
+            this.apellido = apellido;
+
+            // Puedes asignar el nombre y apellido a los controles de tu formulario
+            lblNomApe.Text = nombre + apellido;
         }
 
         private void TStrip_Salir_Click(object sender, EventArgs e)
@@ -35,6 +41,11 @@ namespace WinAppProyectoG1
         {
             FrmEliminarDatosVideo ObjEliminarDatosVideo = new FrmEliminarDatosVideo();
             ObjEliminarDatosVideo.ShowDialog();
+        }
+
+        private void FrmHome_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

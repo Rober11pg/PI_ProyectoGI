@@ -45,13 +45,14 @@
             this.grpBoxNombre = new System.Windows.Forms.GroupBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.panelRoot = new System.Windows.Forms.Panel();
+            this.btnContinuarRot = new System.Windows.Forms.Button();
             this.gpBoxCaracteresroot = new System.Windows.Forms.GroupBox();
             this.txtIngreCaracteresRoot = new System.Windows.Forms.TextBox();
             this.btnCambiarImage = new System.Windows.Forms.Button();
             this.pbxImageRobot = new System.Windows.Forms.PictureBox();
             this.btnContinuar = new System.Windows.Forms.Button();
             this.checkBoxRobot = new System.Windows.Forms.CheckBox();
-            this.btnContinuarRot = new System.Windows.Forms.Button();
+            this.lbl_resp = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.grpGenero.SuspendLayout();
             this.grpConfContra.SuspendLayout();
@@ -80,6 +81,7 @@
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Registrarse";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // grpGenero
             // 
@@ -258,15 +260,29 @@
             // 
             // panelRoot
             // 
+            this.panelRoot.Controls.Add(this.lbl_resp);
             this.panelRoot.Controls.Add(this.btnContinuarRot);
             this.panelRoot.Controls.Add(this.gpBoxCaracteresroot);
             this.panelRoot.Controls.Add(this.btnCambiarImage);
             this.panelRoot.Controls.Add(this.pbxImageRobot);
             this.panelRoot.Location = new System.Drawing.Point(172, 127);
             this.panelRoot.Name = "panelRoot";
-            this.panelRoot.Size = new System.Drawing.Size(383, 439);
+            this.panelRoot.Size = new System.Drawing.Size(383, 462);
             this.panelRoot.TabIndex = 24;
             this.panelRoot.Visible = false;
+            // 
+            // btnContinuarRot
+            // 
+            this.btnContinuarRot.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnContinuarRot.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnContinuarRot.Location = new System.Drawing.Point(96, 398);
+            this.btnContinuarRot.Name = "btnContinuarRot";
+            this.btnContinuarRot.Size = new System.Drawing.Size(186, 48);
+            this.btnContinuarRot.TabIndex = 25;
+            this.btnContinuarRot.Text = "Continuar";
+            this.btnContinuarRot.UseVisualStyleBackColor = false;
+            this.btnContinuarRot.Visible = false;
+            this.btnContinuarRot.Click += new System.EventHandler(this.btnContinuarRot_Click);
             // 
             // gpBoxCaracteresroot
             // 
@@ -285,7 +301,6 @@
             // 
             this.txtIngreCaracteresRoot.BackColor = System.Drawing.SystemColors.HighlightText;
             this.txtIngreCaracteresRoot.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtIngreCaracteresRoot.Enabled = false;
             this.txtIngreCaracteresRoot.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIngreCaracteresRoot.Location = new System.Drawing.Point(20, 26);
             this.txtIngreCaracteresRoot.Name = "txtIngreCaracteresRoot";
@@ -303,6 +318,7 @@
             this.btnCambiarImage.Text = "Cambiar Imagen";
             this.btnCambiarImage.UseVisualStyleBackColor = false;
             this.btnCambiarImage.Visible = false;
+            this.btnCambiarImage.Click += new System.EventHandler(this.btnCambiarImage_Click);
             // 
             // pbxImageRobot
             // 
@@ -341,18 +357,14 @@
             this.checkBoxRobot.UseVisualStyleBackColor = true;
             this.checkBoxRobot.CheckedChanged += new System.EventHandler(this.checkBoxRobot_CheckedChanged);
             // 
-            // btnContinuarRot
+            // lbl_resp
             // 
-            this.btnContinuarRot.BackColor = System.Drawing.SystemColors.Highlight;
-            this.btnContinuarRot.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnContinuarRot.Location = new System.Drawing.Point(101, 367);
-            this.btnContinuarRot.Name = "btnContinuarRot";
-            this.btnContinuarRot.Size = new System.Drawing.Size(186, 48);
-            this.btnContinuarRot.TabIndex = 25;
-            this.btnContinuarRot.Text = "Continuar";
-            this.btnContinuarRot.UseVisualStyleBackColor = false;
-            this.btnContinuarRot.Visible = false;
-            this.btnContinuarRot.Click += new System.EventHandler(this.btnContinuarRot_Click);
+            this.lbl_resp.AutoSize = true;
+            this.lbl_resp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_resp.Location = new System.Drawing.Point(151, 360);
+            this.lbl_resp.Name = "lbl_resp";
+            this.lbl_resp.Size = new System.Drawing.Size(0, 25);
+            this.lbl_resp.TabIndex = 26;
             // 
             // FrmRegistrar
             // 
@@ -381,6 +393,7 @@
             this.grpBoxNombre.ResumeLayout(false);
             this.grpBoxNombre.PerformLayout();
             this.panelRoot.ResumeLayout(false);
+            this.panelRoot.PerformLayout();
             this.gpBoxCaracteresroot.ResumeLayout(false);
             this.gpBoxCaracteresroot.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxImageRobot)).EndInit();
@@ -414,5 +427,6 @@
         private System.Windows.Forms.Button btnCambiarImage;
         private System.Windows.Forms.PictureBox pbxImageRobot;
         private System.Windows.Forms.Button btnContinuarRot;
+        private System.Windows.Forms.Label lbl_resp;
     }
 }
