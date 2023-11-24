@@ -17,15 +17,20 @@ namespace WinAppProyectoG1
             InitializeComponent();
         }
 
-        private void btnCancelar_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+     
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
             FrmHome ObjHome = new FrmHome();
             ObjHome.ShowDialog();
         }
+
+        private void btnRegistrarse_Click(object sender, EventArgs e)
+        {
+            FrmRegistrar ObjRegistrar = new FrmRegistrar();
+            ObjRegistrar.ShowDialog();
+        }
+
+       
     }
 }

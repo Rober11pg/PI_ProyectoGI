@@ -307,6 +307,7 @@ namespace WinAppProyectoG1
                 else
                 {
                     txtPeriodoActividad.Focus();
+                    //
                 }
                 
             }
