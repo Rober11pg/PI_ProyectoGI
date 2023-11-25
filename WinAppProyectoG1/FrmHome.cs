@@ -27,7 +27,7 @@ namespace WinAppProyectoG1
 
         private void TStrip_Salir_Click(object sender, EventArgs e)
         {
-            FrmIngresarUsuario.LimpiarCamposEstatico();
+           /* FrmIngresarUsuario.LimpiarCamposEstatico();*/
             this.Close();
         }
 

@@ -19,7 +19,7 @@ namespace WinAppProyectoG1
         char[] gen = new char[100];
         int i = 0;
         int posicion;
-        public event Action LimpiarCamposEvent;
+        
 
         public FrmIngresarUsuario(string[] nombre_, string[] apellido_, string[] usuario_, string[] contra_, char[] gen_, int i)
         {
@@ -40,7 +40,6 @@ namespace WinAppProyectoG1
                 if (ObjValidar.ValidarContraseña(txtContrasenia.Text, posicion))
                 {
                     FrmHome ObjHome = new FrmHome(nombre[posicion], apellido[posicion]);
-                    LimpiarCamposEvent?.Invoke(); // Disparar el evento para limpiar campos
                     ObjHome.ShowDialog();
                 }
                 else
@@ -56,11 +55,11 @@ namespace WinAppProyectoG1
                 // También puedes mostrar un MessageBox con el mensaje de error si es necesario.
             }
         }
-        public static void LimpiarCamposEstatico()
+       /* public static void LimpiarCamposEstatico()
         {
             FrmIngresarUsuario frmIngresarUsuario = Application.OpenForms.OfType<FrmIngresarUsuario>().FirstOrDefault();
             frmIngresarUsuario?.LimpiarCampos();
-        }
+        }*/
         private void btnRegistrarse_Click(object sender, EventArgs e)
         {
             FrmRegistrar ObjRegistrar = new FrmRegistrar();
@@ -72,12 +71,12 @@ namespace WinAppProyectoG1
 
         }
 
-        public void LimpiarCampos()
+     /*   public void LimpiarCampos()
         {
             txtUsuario.Clear();
             txtContrasenia.Clear();
         }
-
+*/
         private void txtUsuario_KeyPress(object sender, KeyPressEventArgs e)
         {
             try

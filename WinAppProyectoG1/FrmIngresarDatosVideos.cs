@@ -17,7 +17,7 @@ namespace WinAppProyectoG1
         int filas = 0;
 
         string nombre, periodo, generoArtista, pais, tituloVideo, generoVideo, discografia, productora, colaboraciones, director, descripcion, duracion, fecha, visitas, link;
-       
+        string nombre_usu, apellido_usu;
         string restriccionPuntuacion0Simbolos = @"[^\p{L}]+$"; // Permitir solo letras
 
         
@@ -99,6 +99,8 @@ namespace WinAppProyectoG1
             dataGridView1.Rows[filas].Cells[13].Value = visitas;
             dataGridView1.Rows[filas].Cells[14].Value = link;
             MessageBox.Show("Datos enviados", "Validación Exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            FrmHome ObjHome = new FrmHome(nombre_usu, apellido_usu);
+            ObjHome.ShowDialog();
         }
 
         private void FrmIngresarDatosVideos_Load(object sender, EventArgs e)
