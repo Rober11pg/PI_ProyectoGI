@@ -14,6 +14,7 @@ namespace WinAppProyectoG1
 {
     public partial class FrmIngresarDatosVideos : Form
     {
+        int filas = 0;
 
         string nombre, periodo, generoArtista, pais, tituloVideo, generoVideo, discografia, productora, colaboraciones, director, descripcion, duracion, fecha, visitas, link;
        
@@ -80,10 +81,24 @@ namespace WinAppProyectoG1
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
-            FrmEliminarDatosVideo objEnvioDatos = new FrmEliminarDatosVideo();
-            objEnvioDatos.RecibirDatos(nombre, periodo, generoArtista, pais, tituloVideo, generoVideo, discografia, productora, colaboraciones, director, descripcion, duracion, fecha, visitas, link);
+            dataGridView1.Rows.Add();
+            filas = dataGridView1.Rows.Count;
+            dataGridView1.Rows[filas].Cells[0].Value = nombre;
+            dataGridView1.Rows[filas].Cells[1].Value = periodo;
+            dataGridView1.Rows[filas].Cells[2].Value = generoArtista;
+            dataGridView1.Rows[filas].Cells[3].Value = pais;
+            dataGridView1.Rows[filas].Cells[4].Value = tituloVideo;
+            dataGridView1.Rows[filas].Cells[5].Value = generoVideo;
+            dataGridView1.Rows[filas].Cells[6].Value = discografia;
+            dataGridView1.Rows[filas].Cells[7].Value = productora;
+            dataGridView1.Rows[filas].Cells[8].Value = colaboraciones;
+            dataGridView1.Rows[filas].Cells[9].Value = director;
+            dataGridView1.Rows[filas].Cells[10].Value = descripcion;
+            dataGridView1.Rows[filas].Cells[11].Value = duracion;
+            dataGridView1.Rows[filas].Cells[12].Value = fecha;
+            dataGridView1.Rows[filas].Cells[13].Value = visitas;
+            dataGridView1.Rows[filas].Cells[14].Value = link;
             MessageBox.Show("Datos enviados", "Validación Exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            objEnvioDatos.ShowDialog();
         }
 
         private void FrmIngresarDatosVideos_Load(object sender, EventArgs e)

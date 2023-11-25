@@ -64,27 +64,45 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.lblTDatos = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.NomC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GCantante = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.POC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TCancion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GCancion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Direc_Video = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Descrip = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DuracionV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FPublicacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LinkV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(71, 42);
+            this.label2.Location = new System.Drawing.Point(53, 34);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(298, 29);
+            this.label2.Size = new System.Drawing.Size(237, 24);
             this.label2.TabIndex = 1;
             this.label2.Text = "Título del video musical:";
             // 
             // txtTituloVideo
             // 
             this.txtTituloVideo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTituloVideo.Location = new System.Drawing.Point(401, 37);
+            this.txtTituloVideo.Location = new System.Drawing.Point(301, 30);
+            this.txtTituloVideo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtTituloVideo.Name = "txtTituloVideo";
-            this.txtTituloVideo.Size = new System.Drawing.Size(206, 34);
+            this.txtTituloVideo.Size = new System.Drawing.Size(156, 28);
             this.txtTituloVideo.TabIndex = 3;
             this.txtTituloVideo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTituloVideo_KeyPress);
             // 
@@ -92,18 +110,20 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(60, 42);
+            this.label4.Location = new System.Drawing.Point(45, 34);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(224, 29);
+            this.label4.Size = new System.Drawing.Size(177, 24);
             this.label4.TabIndex = 5;
             this.label4.Text = "Duración del Video:";
             // 
             // txtProductora
             // 
             this.txtProductora.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProductora.Location = new System.Drawing.Point(401, 204);
+            this.txtProductora.Location = new System.Drawing.Point(301, 166);
+            this.txtProductora.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtProductora.Name = "txtProductora";
-            this.txtProductora.Size = new System.Drawing.Size(206, 34);
+            this.txtProductora.Size = new System.Drawing.Size(156, 28);
             this.txtProductora.TabIndex = 6;
             this.txtProductora.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtProductora_KeyPress);
             // 
@@ -124,9 +144,11 @@
             this.groupBox3.Controls.Add(this.txtProductora);
             this.groupBox3.Controls.Add(this.txtTituloVideo);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(765, 5);
+            this.groupBox3.Location = new System.Drawing.Point(574, 4);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(721, 424);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Size = new System.Drawing.Size(541, 344);
             this.groupBox3.TabIndex = 9;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Datos del video musical";
@@ -135,18 +157,20 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(165, 265);
+            this.label3.Location = new System.Drawing.Point(124, 215);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(204, 29);
+            this.label3.Size = new System.Drawing.Size(162, 24);
             this.label3.TabIndex = 22;
             this.label3.Text = "Colaboraciones:";
             // 
             // txtColaboraciones
             // 
             this.txtColaboraciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtColaboraciones.Location = new System.Drawing.Point(401, 260);
+            this.txtColaboraciones.Location = new System.Drawing.Point(301, 211);
+            this.txtColaboraciones.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtColaboraciones.Name = "txtColaboraciones";
-            this.txtColaboraciones.Size = new System.Drawing.Size(206, 34);
+            this.txtColaboraciones.Size = new System.Drawing.Size(156, 28);
             this.txtColaboraciones.TabIndex = 21;
             this.txtColaboraciones.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtColaboraciones_KeyPress);
             // 
@@ -154,18 +178,20 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(221, 152);
+            this.label1.Location = new System.Drawing.Point(166, 124);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(152, 29);
+            this.label1.Size = new System.Drawing.Size(119, 24);
             this.label1.TabIndex = 20;
             this.label1.Text = "Discografía:";
             // 
             // txtDiscografia
             // 
             this.txtDiscografia.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDiscografia.Location = new System.Drawing.Point(401, 147);
+            this.txtDiscografia.Location = new System.Drawing.Point(301, 119);
+            this.txtDiscografia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtDiscografia.Name = "txtDiscografia";
-            this.txtDiscografia.Size = new System.Drawing.Size(206, 34);
+            this.txtDiscografia.Size = new System.Drawing.Size(156, 28);
             this.txtDiscografia.TabIndex = 19;
             this.txtDiscografia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDiscografia_KeyPress);
             // 
@@ -176,18 +202,20 @@
             this.cmbGeneroVideo.Items.AddRange(new object[] {
             "rock ",
             "reggae"});
-            this.cmbGeneroVideo.Location = new System.Drawing.Point(401, 91);
+            this.cmbGeneroVideo.Location = new System.Drawing.Point(301, 74);
+            this.cmbGeneroVideo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbGeneroVideo.Name = "cmbGeneroVideo";
-            this.cmbGeneroVideo.Size = new System.Drawing.Size(206, 37);
+            this.cmbGeneroVideo.Size = new System.Drawing.Size(156, 30);
             this.cmbGeneroVideo.TabIndex = 18;
             this.cmbGeneroVideo.SelectedIndexChanged += new System.EventHandler(this.cmbGeneroVideo_SelectedIndexChanged);
             // 
             // txtDescripcion
             // 
             this.txtDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDescripcion.Location = new System.Drawing.Point(219, 377);
+            this.txtDescripcion.Location = new System.Drawing.Point(164, 306);
+            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(388, 34);
+            this.txtDescripcion.Size = new System.Drawing.Size(292, 28);
             this.txtDescripcion.TabIndex = 15;
             this.txtDescripcion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDescripcion_KeyPress);
             // 
@@ -195,9 +223,10 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(43, 380);
+            this.label12.Location = new System.Drawing.Point(32, 309);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(159, 29);
+            this.label12.Size = new System.Drawing.Size(127, 24);
             this.label12.TabIndex = 14;
             this.label12.Text = "Descripción:";
             // 
@@ -205,9 +234,10 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(141, 321);
+            this.label9.Location = new System.Drawing.Point(106, 261);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(228, 29);
+            this.label9.Size = new System.Drawing.Size(181, 24);
             this.label9.TabIndex = 11;
             this.label9.Text = "Director del video:";
             // 
@@ -215,18 +245,20 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(221, 207);
+            this.label6.Location = new System.Drawing.Point(166, 168);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(148, 29);
+            this.label6.Size = new System.Drawing.Size(118, 24);
             this.label6.TabIndex = 9;
             this.label6.Text = "Productora:";
             // 
             // txtDirectorVideo
             // 
             this.txtDirectorVideo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDirectorVideo.Location = new System.Drawing.Point(401, 318);
+            this.txtDirectorVideo.Location = new System.Drawing.Point(301, 258);
+            this.txtDirectorVideo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtDirectorVideo.Name = "txtDirectorVideo";
-            this.txtDirectorVideo.Size = new System.Drawing.Size(206, 34);
+            this.txtDirectorVideo.Size = new System.Drawing.Size(156, 28);
             this.txtDirectorVideo.TabIndex = 8;
             this.txtDirectorVideo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDirectorVideo_KeyPress);
             // 
@@ -234,9 +266,10 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(262, 99);
+            this.label5.Location = new System.Drawing.Point(196, 80);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(107, 29);
+            this.label5.Size = new System.Drawing.Size(86, 24);
             this.label5.TabIndex = 7;
             this.label5.Text = "Género:";
             // 
@@ -244,9 +277,10 @@
             // 
             this.btnCancelar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(1166, 639);
+            this.btnCancelar.Location = new System.Drawing.Point(874, 519);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(162, 62);
+            this.btnCancelar.Size = new System.Drawing.Size(122, 50);
             this.btnCancelar.TabIndex = 11;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
@@ -256,9 +290,10 @@
             // 
             this.btnIngresar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnIngresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIngresar.Location = new System.Drawing.Point(1167, 510);
+            this.btnIngresar.Location = new System.Drawing.Point(875, 414);
+            this.btnIngresar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnIngresar.Name = "btnIngresar";
-            this.btnIngresar.Size = new System.Drawing.Size(161, 59);
+            this.btnIngresar.Size = new System.Drawing.Size(121, 48);
             this.btnIngresar.TabIndex = 10;
             this.btnIngresar.Text = "Ingresar";
             this.btnIngresar.UseVisualStyleBackColor = false;
@@ -275,9 +310,11 @@
             this.groupBox2.Controls.Add(this.txtNombre);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(120, 104);
+            this.groupBox2.Location = new System.Drawing.Point(90, 84);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(527, 292);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Size = new System.Drawing.Size(395, 237);
             this.groupBox2.TabIndex = 12;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos del Artista";
@@ -285,9 +322,10 @@
             // txtGenerosArtista
             // 
             this.txtGenerosArtista.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGenerosArtista.Location = new System.Drawing.Point(293, 180);
+            this.txtGenerosArtista.Location = new System.Drawing.Point(220, 146);
+            this.txtGenerosArtista.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtGenerosArtista.Name = "txtGenerosArtista";
-            this.txtGenerosArtista.Size = new System.Drawing.Size(203, 34);
+            this.txtGenerosArtista.Size = new System.Drawing.Size(153, 28);
             this.txtGenerosArtista.TabIndex = 19;
             this.txtGenerosArtista.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtGenerosArtista_KeyPress);
             // 
@@ -295,18 +333,20 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(129, 180);
+            this.label11.Location = new System.Drawing.Point(97, 146);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(138, 29);
+            this.label11.Size = new System.Drawing.Size(110, 24);
             this.label11.TabIndex = 18;
             this.label11.Text = "Género(s):";
             // 
             // txtPeriodoActividad
             // 
             this.txtPeriodoActividad.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPeriodoActividad.Location = new System.Drawing.Point(293, 120);
+            this.txtPeriodoActividad.Location = new System.Drawing.Point(220, 98);
+            this.txtPeriodoActividad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtPeriodoActividad.Name = "txtPeriodoActividad";
-            this.txtPeriodoActividad.Size = new System.Drawing.Size(203, 34);
+            this.txtPeriodoActividad.Size = new System.Drawing.Size(153, 28);
             this.txtPeriodoActividad.TabIndex = 16;
             this.txtPeriodoActividad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPeriodoActividad_KeyPress);
             // 
@@ -314,18 +354,20 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(13, 125);
+            this.label10.Location = new System.Drawing.Point(10, 102);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(261, 29);
+            this.label10.Size = new System.Drawing.Size(207, 24);
             this.label10.TabIndex = 15;
             this.label10.Text = "Periodo de actividad:";
             // 
             // txtPaisOrigen
             // 
             this.txtPaisOrigen.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPaisOrigen.Location = new System.Drawing.Point(293, 235);
+            this.txtPaisOrigen.Location = new System.Drawing.Point(220, 191);
+            this.txtPaisOrigen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtPaisOrigen.Name = "txtPaisOrigen";
-            this.txtPaisOrigen.Size = new System.Drawing.Size(203, 34);
+            this.txtPaisOrigen.Size = new System.Drawing.Size(153, 28);
             this.txtPaisOrigen.TabIndex = 14;
             this.txtPaisOrigen.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPaisOrigen_KeyPress);
             // 
@@ -333,18 +375,20 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(72, 238);
+            this.label8.Location = new System.Drawing.Point(54, 193);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(195, 29);
+            this.label8.Size = new System.Drawing.Size(155, 24);
             this.label8.TabIndex = 13;
             this.label8.Text = "País de Origen:";
             // 
             // txtNombre
             // 
             this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(293, 59);
+            this.txtNombre.Location = new System.Drawing.Point(220, 48);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(203, 34);
+            this.txtNombre.Size = new System.Drawing.Size(153, 28);
             this.txtNombre.TabIndex = 12;
             this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
             // 
@@ -352,9 +396,10 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(160, 62);
+            this.label7.Location = new System.Drawing.Point(120, 50);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(114, 29);
+            this.label7.Size = new System.Drawing.Size(91, 24);
             this.label7.TabIndex = 0;
             this.label7.Text = "Nombre:";
             // 
@@ -369,9 +414,11 @@
             this.groupBox4.Controls.Add(this.label13);
             this.groupBox4.Controls.Add(this.label4);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(120, 457);
+            this.groupBox4.Location = new System.Drawing.Point(90, 371);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(823, 295);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox4.Size = new System.Drawing.Size(617, 240);
             this.groupBox4.TabIndex = 13;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Datos Adicionales";
@@ -380,10 +427,11 @@
             // 
             this.dateTimeDuracion.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimeDuracion.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimeDuracion.Location = new System.Drawing.Point(305, 33);
+            this.dateTimeDuracion.Location = new System.Drawing.Point(229, 27);
+            this.dateTimeDuracion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dateTimeDuracion.Name = "dateTimeDuracion";
             this.dateTimeDuracion.ShowUpDown = true;
-            this.dateTimeDuracion.Size = new System.Drawing.Size(497, 34);
+            this.dateTimeDuracion.Size = new System.Drawing.Size(374, 28);
             this.dateTimeDuracion.TabIndex = 23;
             this.dateTimeDuracion.Value = new System.DateTime(2023, 11, 24, 17, 14, 0, 0);
             this.dateTimeDuracion.ValueChanged += new System.EventHandler(this.dateTimeDuracion_ValueChanged);
@@ -391,9 +439,10 @@
             // txtLink
             // 
             this.txtLink.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLink.Location = new System.Drawing.Point(305, 225);
+            this.txtLink.Location = new System.Drawing.Point(229, 183);
+            this.txtLink.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtLink.Name = "txtLink";
-            this.txtLink.Size = new System.Drawing.Size(497, 34);
+            this.txtLink.Size = new System.Drawing.Size(374, 28);
             this.txtLink.TabIndex = 21;
             this.txtLink.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLink_KeyPress);
             // 
@@ -401,27 +450,30 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(112, 228);
+            this.label15.Location = new System.Drawing.Point(84, 185);
+            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(172, 29);
+            this.label15.Size = new System.Drawing.Size(135, 24);
             this.label15.TabIndex = 22;
             this.label15.Text = "Link del Video:";
             // 
             // dateTimeFechaPublicacion
             // 
             this.dateTimeFechaPublicacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimeFechaPublicacion.Location = new System.Drawing.Point(305, 99);
+            this.dateTimeFechaPublicacion.Location = new System.Drawing.Point(229, 80);
+            this.dateTimeFechaPublicacion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dateTimeFechaPublicacion.Name = "dateTimeFechaPublicacion";
-            this.dateTimeFechaPublicacion.Size = new System.Drawing.Size(497, 34);
+            this.dateTimeFechaPublicacion.Size = new System.Drawing.Size(374, 28);
             this.dateTimeFechaPublicacion.TabIndex = 20;
             this.dateTimeFechaPublicacion.ValueChanged += new System.EventHandler(this.dateTimeFechaPublicacion_ValueChanged);
             // 
             // txtNumeroVisitas
             // 
             this.txtNumeroVisitas.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNumeroVisitas.Location = new System.Drawing.Point(305, 162);
+            this.txtNumeroVisitas.Location = new System.Drawing.Point(229, 132);
+            this.txtNumeroVisitas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNumeroVisitas.Name = "txtNumeroVisitas";
-            this.txtNumeroVisitas.Size = new System.Drawing.Size(497, 34);
+            this.txtNumeroVisitas.Size = new System.Drawing.Size(374, 28);
             this.txtNumeroVisitas.TabIndex = 17;
             this.txtNumeroVisitas.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNumeroVisitas_KeyPress);
             // 
@@ -429,9 +481,10 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(33, 104);
+            this.label14.Location = new System.Drawing.Point(25, 84);
+            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(251, 29);
+            this.label14.Size = new System.Drawing.Size(199, 24);
             this.label14.TabIndex = 18;
             this.label14.Text = "Fecha de Publicación:";
             // 
@@ -439,9 +492,10 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(72, 165);
+            this.label13.Location = new System.Drawing.Point(54, 134);
+            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(212, 29);
+            this.label13.Size = new System.Drawing.Size(165, 24);
             this.label13.TabIndex = 17;
             this.label13.Text = "Número de visitas:";
             // 
@@ -449,23 +503,150 @@
             // 
             this.lblTDatos.AutoSize = true;
             this.lblTDatos.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTDatos.Location = new System.Drawing.Point(190, 9);
+            this.lblTDatos.Location = new System.Drawing.Point(142, 7);
+            this.lblTDatos.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTDatos.Name = "lblTDatos";
-            this.lblTDatos.Size = new System.Drawing.Size(413, 38);
+            this.lblTDatos.Size = new System.Drawing.Size(343, 31);
             this.lblTDatos.TabIndex = 14;
             this.lblTDatos.Text = "DATOS DE LOS VIDEOS";
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.NomC,
+            this.Column1,
+            this.GCantante,
+            this.POC,
+            this.TCancion,
+            this.GCancion,
+            this.Column2,
+            this.Column3,
+            this.Direc_Video,
+            this.Descrip,
+            this.DuracionV,
+            this.FPublicacion,
+            this.Column4,
+            this.LinkV});
+            this.dataGridView1.Location = new System.Drawing.Point(-14, 637);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(1086, 425);
+            this.dataGridView1.TabIndex = 15;
+            // 
+            // NomC
+            // 
+            this.NomC.HeaderText = "Nombre del artista";
+            this.NomC.MinimumWidth = 6;
+            this.NomC.Name = "NomC";
+            this.NomC.Width = 125;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Periodo de actividad";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 125;
+            // 
+            // GCantante
+            // 
+            this.GCantante.HeaderText = "Género(s):";
+            this.GCantante.MinimumWidth = 6;
+            this.GCantante.Name = "GCantante";
+            this.GCantante.Width = 125;
+            // 
+            // POC
+            // 
+            this.POC.HeaderText = "País de origen";
+            this.POC.MinimumWidth = 6;
+            this.POC.Name = "POC";
+            this.POC.Width = 125;
+            // 
+            // TCancion
+            // 
+            this.TCancion.HeaderText = "Título del video musical";
+            this.TCancion.MinimumWidth = 6;
+            this.TCancion.Name = "TCancion";
+            this.TCancion.Width = 125;
+            // 
+            // GCancion
+            // 
+            this.GCancion.HeaderText = "Género del video musical";
+            this.GCancion.MinimumWidth = 6;
+            this.GCancion.Name = "GCancion";
+            this.GCancion.Width = 125;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Discografía";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 125;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Colaboraciones";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 125;
+            // 
+            // Direc_Video
+            // 
+            this.Direc_Video.HeaderText = "Director del video";
+            this.Direc_Video.MinimumWidth = 6;
+            this.Direc_Video.Name = "Direc_Video";
+            this.Direc_Video.Width = 125;
+            // 
+            // Descrip
+            // 
+            this.Descrip.HeaderText = "Descripción del video";
+            this.Descrip.MinimumWidth = 6;
+            this.Descrip.Name = "Descrip";
+            this.Descrip.Width = 125;
+            // 
+            // DuracionV
+            // 
+            this.DuracionV.HeaderText = "Duración del video";
+            this.DuracionV.MinimumWidth = 6;
+            this.DuracionV.Name = "DuracionV";
+            this.DuracionV.Width = 125;
+            // 
+            // FPublicacion
+            // 
+            this.FPublicacion.HeaderText = "Fecha de publicación";
+            this.FPublicacion.MinimumWidth = 6;
+            this.FPublicacion.Name = "FPublicacion";
+            this.FPublicacion.Width = 125;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Número de visitas";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 125;
+            // 
+            // LinkV
+            // 
+            this.LinkV.HeaderText = "Link del Video";
+            this.LinkV.MinimumWidth = 6;
+            this.LinkV.Name = "LinkV";
+            this.LinkV.Width = 125;
+            // 
             // FrmIngresarDatosVideos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1785, 787);
+            this.ClientSize = new System.Drawing.Size(1072, 675);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.lblTDatos);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnIngresar);
             this.Controls.Add(this.groupBox3);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FrmIngresarDatosVideos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Datos de videos";
@@ -476,6 +657,7 @@
             this.groupBox2.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -518,5 +700,20 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label lblTDatos;
         private System.Windows.Forms.DateTimePicker dateTimeDuracion;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NomC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GCantante;
+        private System.Windows.Forms.DataGridViewTextBoxColumn POC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TCancion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GCancion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Direc_Video;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Descrip;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DuracionV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FPublicacion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn LinkV;
     }
 }
