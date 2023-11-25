@@ -96,6 +96,8 @@ namespace WinAppProyectoG1
                 gpBoxCaracteresroot.Visible= true;
                 btnContinuarRot.Visible = true;
                 btnCambiarImage.Visible = true;
+                btnContinuar.Enabled = false;
+                txtIngreCaracteresRoot.Focus();
 
             }
             else
@@ -106,6 +108,7 @@ namespace WinAppProyectoG1
                 gpBoxCaracteresroot.Visible = false;
                 btnContinuarRot.Visible = false;
                 btnCambiarImage.Visible = false;
+                btnContinuar.Enabled = true;
             }
             
         }
@@ -201,7 +204,7 @@ namespace WinAppProyectoG1
             }
             else
             {
-                MessageBox.Show("Ingrese de nuevo el Catpcham porfavor");
+                MessageBox.Show("Ingrese de nuevo el captcha por favor");
                 txtIngreCaracteresRoot.Clear();
                 txtIngreCaracteresRoot.Focus();
             }

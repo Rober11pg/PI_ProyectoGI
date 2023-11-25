@@ -44,6 +44,7 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.SystemColors.Highlight;
             this.menuStrip1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -68,7 +69,7 @@
             // TStrip_Salir
             // 
             this.TStrip_Salir.Name = "TStrip_Salir";
-            this.TStrip_Salir.Size = new System.Drawing.Size(146, 36);
+            this.TStrip_Salir.Size = new System.Drawing.Size(224, 36);
             this.TStrip_Salir.Text = "Salir";
             this.TStrip_Salir.Click += new System.EventHandler(this.TStrip_Salir_Click);
             // 
@@ -85,21 +86,21 @@
             // TStrip_IngresarDatosV
             // 
             this.TStrip_IngresarDatosV.Name = "TStrip_IngresarDatosV";
-            this.TStrip_IngresarDatosV.Size = new System.Drawing.Size(214, 36);
+            this.TStrip_IngresarDatosV.Size = new System.Drawing.Size(224, 36);
             this.TStrip_IngresarDatosV.Text = "Ingresar";
             this.TStrip_IngresarDatosV.Click += new System.EventHandler(this.TStrip_IngresarDatosV_Click);
             // 
             // TStrip_Eliminar
             // 
             this.TStrip_Eliminar.Name = "TStrip_Eliminar";
-            this.TStrip_Eliminar.Size = new System.Drawing.Size(214, 36);
+            this.TStrip_Eliminar.Size = new System.Drawing.Size(224, 36);
             this.TStrip_Eliminar.Text = "Eliminar";
             this.TStrip_Eliminar.Click += new System.EventHandler(this.TStrip_Eliminar_Click);
             // 
             // eliminarToolStripMenuItem
             // 
             this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
-            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(214, 36);
+            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(224, 36);
             this.eliminarToolStripMenuItem.Text = "Reproducir";
             // 
             // listarToolStripMenuItem
@@ -125,9 +126,11 @@
             // lblNomApe
             // 
             this.lblNomApe.AutoSize = true;
-            this.lblNomApe.Location = new System.Drawing.Point(1133, 68);
+            this.lblNomApe.BackColor = System.Drawing.SystemColors.Highlight;
+            this.lblNomApe.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNomApe.Location = new System.Drawing.Point(1210, 9);
             this.lblNomApe.Name = "lblNomApe";
-            this.lblNomApe.Size = new System.Drawing.Size(11, 16);
+            this.lblNomApe.Size = new System.Drawing.Size(22, 29);
             this.lblNomApe.TabIndex = 1;
             this.lblNomApe.Text = "-";
             // 

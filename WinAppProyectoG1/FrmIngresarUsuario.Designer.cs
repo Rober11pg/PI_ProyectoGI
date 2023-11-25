@@ -112,6 +112,7 @@
             this.checkBoxContra.TabIndex = 2;
             this.checkBoxContra.Text = "Mostrar Contraseña";
             this.checkBoxContra.UseVisualStyleBackColor = true;
+            this.checkBoxContra.CheckedChanged += new System.EventHandler(this.checkBoxContra_CheckedChanged);
             // 
             // grpContraseña
             // 
@@ -132,6 +133,7 @@
             this.txtContrasenia.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContrasenia.Location = new System.Drawing.Point(20, 37);
             this.txtContrasenia.Name = "txtContrasenia";
+            this.txtContrasenia.PasswordChar = '*';
             this.txtContrasenia.Size = new System.Drawing.Size(432, 27);
             this.txtContrasenia.TabIndex = 0;
             this.txtContrasenia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtContrasenia_KeyPress);

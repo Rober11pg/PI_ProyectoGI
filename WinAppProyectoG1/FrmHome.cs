@@ -22,13 +22,15 @@ namespace WinAppProyectoG1
             this.apellido = apellido;
 
             // Puedes asignar el nombre y apellido a los controles de tu formulario
-            lblNomApe.Text = nombre + apellido;
+            lblNomApe.Text = nombre + " " +apellido;
         }
 
         private void TStrip_Salir_Click(object sender, EventArgs e)
         {
+            FrmIngresarUsuario.LimpiarCamposEstatico();
             this.Close();
         }
+
 
         private void TStrip_IngresarDatosV_Click(object sender, EventArgs e)
         {

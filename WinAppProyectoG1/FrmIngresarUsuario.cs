@@ -19,6 +19,8 @@ namespace WinAppProyectoG1
         char[] gen = new char[100];
         int i = 0;
         int posicion;
+        public event Action LimpiarCamposEvent;
+
         public FrmIngresarUsuario(string[] nombre_, string[] apellido_, string[] usuario_, string[] contra_, char[] gen_, int i)
         {
             InitializeComponent();
@@ -29,6 +31,7 @@ namespace WinAppProyectoG1
             this.gen = gen_;
             this.i = i;
         }
+        
         private void btnIngresar_Click(object sender, EventArgs e)
         {
             try
@@ -37,6 +40,7 @@ namespace WinAppProyectoG1
                 if (ObjValidar.ValidarContraseña(txtContrasenia.Text, posicion))
                 {
                     FrmHome ObjHome = new FrmHome(nombre[posicion], apellido[posicion]);
+                    LimpiarCamposEvent?.Invoke(); // Disparar el evento para limpiar campos
                     ObjHome.ShowDialog();
                 }
                 else
@@ -52,7 +56,11 @@ namespace WinAppProyectoG1
                 // También puedes mostrar un MessageBox con el mensaje de error si es necesario.
             }
         }
-
+        public static void LimpiarCamposEstatico()
+        {
+            FrmIngresarUsuario frmIngresarUsuario = Application.OpenForms.OfType<FrmIngresarUsuario>().FirstOrDefault();
+            frmIngresarUsuario?.LimpiarCampos();
+        }
         private void btnRegistrarse_Click(object sender, EventArgs e)
         {
             FrmRegistrar ObjRegistrar = new FrmRegistrar();
@@ -62,6 +70,12 @@ namespace WinAppProyectoG1
         private void FrmIngresarUsuario_Load(object sender, EventArgs e)
         {
 
+        }
+
+        public void LimpiarCampos()
+        {
+            txtUsuario.Clear();
+            txtContrasenia.Clear();
         }
 
         private void txtUsuario_KeyPress(object sender, KeyPressEventArgs e)
@@ -96,6 +110,18 @@ namespace WinAppProyectoG1
                 btnIngresar_Click(sender, e);
             }
         }
+
+        private void checkBoxContra_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBoxContra.Checked)
+            {
+                txtContrasenia.PasswordChar = '\0';
+            }
+            else
+            {
+                txtContrasenia.PasswordChar = '*';
+            }
+        }       
     }
 
 }
