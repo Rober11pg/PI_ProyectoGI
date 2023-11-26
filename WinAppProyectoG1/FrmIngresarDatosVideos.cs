@@ -20,8 +20,17 @@ namespace WinAppProyectoG1
         string nombre_usu, apellido_usu;
         string restriccionPuntuacion0Simbolos = @"[^\p{L}]+$"; // Permitir solo letras
 
-        
+        private List<Video> videos;
+        private FrmBusquedaVideo formularioBusqueda;
 
+        public FrmIngresarDatosVideos(FrmBusquedaVideo busqueda)
+        {
+            InitializeComponent();
+            videos = new List<Video>();
+            formularioBusqueda = busqueda;
+
+            //FormularioDestino = new FrmEliminarDatosVideo();
+        }
 
 
         private void txtNumeroVisitas_KeyPress(object sender, KeyPressEventArgs e)
@@ -79,6 +88,11 @@ namespace WinAppProyectoG1
             this.Close();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+           
+        }
+
         private void btnIngresar_Click(object sender, EventArgs e)
         {
             dataGridView1.Rows.Add();
@@ -98,6 +112,18 @@ namespace WinAppProyectoG1
             dataGridView1.Rows[filas].Cells[12].Value = fecha;
             dataGridView1.Rows[filas].Cells[13].Value = visitas;
             dataGridView1.Rows[filas].Cells[14].Value = link;
+
+            //Se crea un objeto video y se le anade a la lista videos
+            Video newVideo = new Video(nombre,periodo, generoArtista, pais, tituloVideo, generoVideo, discografia, productora, colaboraciones,director, descripcion, duracion, fecha, visitas, link);
+            videos.Add(newVideo);
+
+            if (formularioBusqueda != null)
+            {
+                formularioBusqueda.ActualizarListaVideos(videos);
+            }
+
+            FrmBusquedaVideo newbusqueda = new FrmBusquedaVideo(videos);
+
             MessageBox.Show("Datos enviados", "Validación Exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
             FrmHome ObjHome = new FrmHome(nombre_usu, apellido_usu);
             ObjHome.ShowDialog();
@@ -298,13 +324,6 @@ namespace WinAppProyectoG1
                 }
 
             }
-        }
-
-        public FrmIngresarDatosVideos()
-        {
-            InitializeComponent();
-
-            //FormularioDestino = new FrmEliminarDatosVideo();
         }
 
         private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)

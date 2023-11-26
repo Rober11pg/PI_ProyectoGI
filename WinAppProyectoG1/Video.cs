@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WinAppProyectoG1
 {
-    internal class Video
+    public class Video
     {
         //Atributos Artista
         public string NombreArtista { get; set; }

@@ -15,6 +15,8 @@ namespace WinAppProyectoG1
     {
         private string nombre;
         private string apellido;
+        private List<Video> videos;
+        private FrmBusquedaVideo formularioBusqueda;
         public FrmHome(string nombre, string apellido)
         {
             InitializeComponent();
@@ -34,7 +36,7 @@ namespace WinAppProyectoG1
 
         private void TStrip_IngresarDatosV_Click(object sender, EventArgs e)
         {
-            FrmIngresarDatosVideos ObjDatosVideos = new FrmIngresarDatosVideos();
+            FrmIngresarDatosVideos ObjDatosVideos = new FrmIngresarDatosVideos(formularioBusqueda);
            ObjDatosVideos.ShowDialog();
             
         }
@@ -48,6 +50,12 @@ namespace WinAppProyectoG1
         private void FrmHome_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void buscarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmBusquedaVideo newBusqueda =  new FrmBusquedaVideo(videos);
+            newBusqueda.Show();
         }
     }
 }

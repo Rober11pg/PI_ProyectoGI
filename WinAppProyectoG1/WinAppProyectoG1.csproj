@@ -53,6 +53,12 @@
     <Compile Include="FrmBienvenida.Designer.cs">
       <DependentUpon>FrmBienvenida.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmBusquedaVideo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBusquedaVideo.Designer.cs">
+      <DependentUpon>FrmBusquedaVideo.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmEliminarDatosVideo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +94,9 @@
     <Compile Include="Video.cs" />
     <EmbeddedResource Include="FrmBienvenida.resx">
       <DependentUpon>FrmBienvenida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBusquedaVideo.resx">
+      <DependentUpon>FrmBusquedaVideo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmEliminarDatosVideo.resx">
       <DependentUpon>FrmEliminarDatosVideo.cs</DependentUpon>
