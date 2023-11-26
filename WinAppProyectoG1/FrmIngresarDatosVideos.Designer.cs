@@ -79,6 +79,7 @@
             this.FPublicacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.LinkV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -100,7 +101,7 @@
             // 
             this.txtTituloVideo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTituloVideo.Location = new System.Drawing.Point(301, 30);
-            this.txtTituloVideo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTituloVideo.Margin = new System.Windows.Forms.Padding(2);
             this.txtTituloVideo.Name = "txtTituloVideo";
             this.txtTituloVideo.Size = new System.Drawing.Size(156, 28);
             this.txtTituloVideo.TabIndex = 3;
@@ -121,7 +122,7 @@
             // 
             this.txtProductora.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtProductora.Location = new System.Drawing.Point(301, 166);
-            this.txtProductora.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtProductora.Margin = new System.Windows.Forms.Padding(2);
             this.txtProductora.Name = "txtProductora";
             this.txtProductora.Size = new System.Drawing.Size(156, 28);
             this.txtProductora.TabIndex = 6;
@@ -145,9 +146,9 @@
             this.groupBox3.Controls.Add(this.txtTituloVideo);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(574, 4);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox3.Size = new System.Drawing.Size(541, 344);
             this.groupBox3.TabIndex = 9;
             this.groupBox3.TabStop = false;
@@ -168,7 +169,7 @@
             // 
             this.txtColaboraciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtColaboraciones.Location = new System.Drawing.Point(301, 211);
-            this.txtColaboraciones.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtColaboraciones.Margin = new System.Windows.Forms.Padding(2);
             this.txtColaboraciones.Name = "txtColaboraciones";
             this.txtColaboraciones.Size = new System.Drawing.Size(156, 28);
             this.txtColaboraciones.TabIndex = 21;
@@ -189,7 +190,7 @@
             // 
             this.txtDiscografia.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDiscografia.Location = new System.Drawing.Point(301, 119);
-            this.txtDiscografia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDiscografia.Margin = new System.Windows.Forms.Padding(2);
             this.txtDiscografia.Name = "txtDiscografia";
             this.txtDiscografia.Size = new System.Drawing.Size(156, 28);
             this.txtDiscografia.TabIndex = 19;
@@ -203,7 +204,7 @@
             "rock ",
             "reggae"});
             this.cmbGeneroVideo.Location = new System.Drawing.Point(301, 74);
-            this.cmbGeneroVideo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbGeneroVideo.Margin = new System.Windows.Forms.Padding(2);
             this.cmbGeneroVideo.Name = "cmbGeneroVideo";
             this.cmbGeneroVideo.Size = new System.Drawing.Size(156, 30);
             this.cmbGeneroVideo.TabIndex = 18;
@@ -213,7 +214,7 @@
             // 
             this.txtDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDescripcion.Location = new System.Drawing.Point(164, 306);
-            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(2);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(292, 28);
             this.txtDescripcion.TabIndex = 15;
@@ -256,7 +257,7 @@
             // 
             this.txtDirectorVideo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDirectorVideo.Location = new System.Drawing.Point(301, 258);
-            this.txtDirectorVideo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDirectorVideo.Margin = new System.Windows.Forms.Padding(2);
             this.txtDirectorVideo.Name = "txtDirectorVideo";
             this.txtDirectorVideo.Size = new System.Drawing.Size(156, 28);
             this.txtDirectorVideo.TabIndex = 8;
@@ -278,7 +279,7 @@
             this.btnCancelar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.Location = new System.Drawing.Point(874, 519);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(122, 50);
             this.btnCancelar.TabIndex = 11;
@@ -291,7 +292,7 @@
             this.btnIngresar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnIngresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIngresar.Location = new System.Drawing.Point(875, 414);
-            this.btnIngresar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnIngresar.Margin = new System.Windows.Forms.Padding(2);
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.Size = new System.Drawing.Size(121, 48);
             this.btnIngresar.TabIndex = 10;
@@ -311,9 +312,9 @@
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(90, 84);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(395, 237);
             this.groupBox2.TabIndex = 12;
             this.groupBox2.TabStop = false;
@@ -323,7 +324,7 @@
             // 
             this.txtGenerosArtista.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGenerosArtista.Location = new System.Drawing.Point(220, 146);
-            this.txtGenerosArtista.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtGenerosArtista.Margin = new System.Windows.Forms.Padding(2);
             this.txtGenerosArtista.Name = "txtGenerosArtista";
             this.txtGenerosArtista.Size = new System.Drawing.Size(153, 28);
             this.txtGenerosArtista.TabIndex = 19;
@@ -344,7 +345,7 @@
             // 
             this.txtPeriodoActividad.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPeriodoActividad.Location = new System.Drawing.Point(220, 98);
-            this.txtPeriodoActividad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPeriodoActividad.Margin = new System.Windows.Forms.Padding(2);
             this.txtPeriodoActividad.Name = "txtPeriodoActividad";
             this.txtPeriodoActividad.Size = new System.Drawing.Size(153, 28);
             this.txtPeriodoActividad.TabIndex = 16;
@@ -365,7 +366,7 @@
             // 
             this.txtPaisOrigen.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPaisOrigen.Location = new System.Drawing.Point(220, 191);
-            this.txtPaisOrigen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPaisOrigen.Margin = new System.Windows.Forms.Padding(2);
             this.txtPaisOrigen.Name = "txtPaisOrigen";
             this.txtPaisOrigen.Size = new System.Drawing.Size(153, 28);
             this.txtPaisOrigen.TabIndex = 14;
@@ -386,7 +387,7 @@
             // 
             this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombre.Location = new System.Drawing.Point(220, 48);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(153, 28);
             this.txtNombre.TabIndex = 12;
@@ -415,9 +416,9 @@
             this.groupBox4.Controls.Add(this.label4);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.Location = new System.Drawing.Point(90, 371);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox4.Size = new System.Drawing.Size(617, 240);
             this.groupBox4.TabIndex = 13;
             this.groupBox4.TabStop = false;
@@ -428,7 +429,7 @@
             this.dateTimeDuracion.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimeDuracion.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dateTimeDuracion.Location = new System.Drawing.Point(229, 27);
-            this.dateTimeDuracion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateTimeDuracion.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimeDuracion.Name = "dateTimeDuracion";
             this.dateTimeDuracion.ShowUpDown = true;
             this.dateTimeDuracion.Size = new System.Drawing.Size(374, 28);
@@ -440,7 +441,7 @@
             // 
             this.txtLink.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLink.Location = new System.Drawing.Point(229, 183);
-            this.txtLink.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtLink.Margin = new System.Windows.Forms.Padding(2);
             this.txtLink.Name = "txtLink";
             this.txtLink.Size = new System.Drawing.Size(374, 28);
             this.txtLink.TabIndex = 21;
@@ -461,7 +462,7 @@
             // 
             this.dateTimeFechaPublicacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimeFechaPublicacion.Location = new System.Drawing.Point(229, 80);
-            this.dateTimeFechaPublicacion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateTimeFechaPublicacion.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimeFechaPublicacion.Name = "dateTimeFechaPublicacion";
             this.dateTimeFechaPublicacion.Size = new System.Drawing.Size(374, 28);
             this.dateTimeFechaPublicacion.TabIndex = 20;
@@ -471,7 +472,7 @@
             // 
             this.txtNumeroVisitas.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNumeroVisitas.Location = new System.Drawing.Point(229, 132);
-            this.txtNumeroVisitas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNumeroVisitas.Margin = new System.Windows.Forms.Padding(2);
             this.txtNumeroVisitas.Name = "txtNumeroVisitas";
             this.txtNumeroVisitas.Size = new System.Drawing.Size(374, 28);
             this.txtNumeroVisitas.TabIndex = 17;
@@ -634,11 +635,24 @@
             this.LinkV.Name = "LinkV";
             this.LinkV.Width = 125;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(875, 467);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(121, 48);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "Generar";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // FrmIngresarDatosVideos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1072, 675);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.lblTDatos);
             this.Controls.Add(this.groupBox4);
@@ -646,7 +660,7 @@
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnIngresar);
             this.Controls.Add(this.groupBox3);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmIngresarDatosVideos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Datos de videos";
@@ -715,5 +729,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn FPublicacion;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn LinkV;
+        private System.Windows.Forms.Button button1;
     }
 }
